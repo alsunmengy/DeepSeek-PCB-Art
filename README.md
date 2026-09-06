@@ -1,4 +1,4 @@
-```markdown
+
 # DeepSeek‑Mermaid PCB Art
 > 🐳 DeepSeek 人鱼少女 艺术纪念PCB，嘉立创EDA开源硬件项目，双面艺术丝印，无电气功能，纯收藏向工艺板。
 
