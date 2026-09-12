@@ -1,5 +1,5 @@
 
-# DeepSeek‑Mermaid PCB Art
+# DeepSeek-Mermaid PCB Art
 > 🐳 DeepSeek 人鱼少女 艺术纪念PCB，嘉立创EDA开源硬件项目，双面艺术丝印，无电气功能，纯收藏向工艺板。
 
 ## 📖 项目简介
@@ -8,7 +8,7 @@
 
 板子规格：
 - 工程软件：嘉立创EDA专业版
-- 基板材质：FR‑4
+- 基板材质：FR-4
 - 板厚：1.6mm
 - 外形：圆角矩形卡片
 - 工艺：双面彩色丝印，金色焊盘镀层做金属描边/Logo文字
@@ -26,8 +26,8 @@
 
 ## 📂 文件说明
 ```
-DeepSeek‑Mermaid‑PCB/
-├─ DeepSeek‑Mermaid‑PCB.json      # 嘉立创EDA工程源文件
+DeepSeek-Mermaid-PCB/
+├─ DeepSeek-Mermaid-PCB.json      # 嘉立创EDA工程源文件
 ├─ README.md                      # 项目说明文档
 ├─ assets/
 │  ├─ front_render.png            # 正面效果图
@@ -38,7 +38,7 @@ DeepSeek‑Mermaid‑PCB/
 ## 🛠️ 使用方式
 ### 方式1：嘉立创EDA源工程
 1. 打开嘉立创EDA专业版；
-2. 文件 → 导入，选择本项目内的`DeepSeek‑Mermaid‑PCB.json`；
+2. 文件 → 导入，选择本项目内的`DeepSeek-Mermaid-PCB.json`；
 3. 核对：板厚、丝印工艺、焊盘镀层颜色（金色）；
 4. 直接提交打样。
 
