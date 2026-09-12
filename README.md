@@ -61,9 +61,9 @@ DeepSeek‑Mermaid‑PCB/
 二次分发请遵守开源协议。
 
 ## 📜 开源协议
-[![CC BY‑NC‑SA 4.0](https://i.creativecommons.org/l/by‑nc‑sa/4.0/88x31.png)](https://creativecommons.org/licenses/by‑nc‑sa/4.0/)
+[![CC BY-NC-SA 4.0](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-本项目采用 **CC BY‑NC‑SA 4.0** 协议开源。
+本项目采用 **CC BY-NC-SA 4.0** 协议开源。
 - ✅ 允许：查看、学习、修改、本地打样、非商用分享；
 - ❌ 禁止：未经许可用于商业生产、批量售卖；
 - ℹ️ 衍生修改版本需要沿用相同开源协议，并注明原项目来源。
@@ -77,6 +77,3 @@ DeepSeek‑Mermaid‑PCB/
 ## 📌 致谢
 - 插画：同人爱好者创作
 - PCB制作平台：嘉立创EDA
-```
-
-如果你打算发布到GitHub，工作任务模式可以帮你一并生成Release打包要点与仓库简短介绍，要不要使用？
