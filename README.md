@@ -77,3 +77,6 @@ DeepSeek-Mermaid-PCB/
 ## 📌 致谢
 - 插画：同人爱好者创作
 - PCB制作平台：嘉立创EDA
+
+
+## README由deepseek/豆包/我共同编写
