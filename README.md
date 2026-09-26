@@ -28,19 +28,19 @@
 
 ## 📂 文件说明
 ```
-DeepSeek-Mermaid-PCB/
-├─ DeepSeek-Mermaid-PCB.json      # 嘉立创EDA工程源文件
-├─ README.md                      # 项目说明文档
-├─ assets/
-│  ├─ front_render.png            # 正面效果图
-│  └─ back_render.png             # 背面效果图
-└─ gerber/                        # 输出Gerber生产文件（可直接提交工厂）
+DeepSeek-PCB-Art/
+├─ ProPrj_deepseek_2026-09-06.epro2    # 嘉立创EDA 专业版工程源文件（可直接导入）
+├─ Gerber_PCB1_2026-09-06.zip          # Gerber 生产文件（可直接提交工厂打样）
+├─ 使用的文件/                          # 设计源素材（插画 / Logo 原图，可二次编辑）
+├─ LICENSE                             # 开源协议（CC BY-NC-SA 4.0，详见「开源协议」章节）
+├─ README.md                           # 项目说明文档
+└─ .gitignore
 ```
 
 ## 🛠️ 使用方式
 ### 方式1：嘉立创EDA源工程
 1. 打开嘉立创EDA专业版；
-2. 文件 → 导入，选择本项目内的`DeepSeek-Mermaid-PCB.json`；
+2. 文件 → 导入，选择本项目内的`ProPrj_deepseek_2026-09-06.epro2`；
 3. 核对：板厚、丝印工艺、焊盘镀层颜色（金色）；
 4. 直接提交打样。
 
@@ -51,7 +51,7 @@ DeepSeek-Mermaid-PCB/
 > 4. 彩色丝印存在轻微色彩偏差属于工厂正常现象。
 
 ### 方式2：Gerber生产文件
-直接使用`gerber`文件夹内文件提交PCB工厂生产，注意和工厂确认支持**双面彩色丝印+沉金/镀金**工艺。
+直接使用 `Gerber_PCB1_2026-09-06.zip` 提交 PCB 工厂生产，注意和工厂确认支持**双面彩色丝印+沉金/镀金**工艺。
 
 ## 📋 打样参数（嘉立创下单页参考值）
 
