@@ -2,7 +2,11 @@
 # DeepSeek-Mermaid PCB Art
 <a href="https://github.com/alsunmengy"><img src="https://img.shields.io/github/followers/alsunmengy?style=for-the-badge&label=%E4%B8%80%E9%94%AE%E5%85%B3%E6%B3%A8&labelColor=%230969da&color=%230d1117" alt="一键关注" height="88"></a> <a href="https://github.com/alsunmengy/DeepSeek-PCB-Art"><img src="https://img.shields.io/github/stars/alsunmengy/DeepSeek-PCB-Art?style=for-the-badge&label=%E4%B8%80%E9%94%AEStar&labelColor=%23ffd33d&color=%230d1117" alt="一键Star" height="88"></a>
 
+
 【ZipZipPipe的个人空间-哔哩哔哩】 https://b23.tv/oK72DdM
+【Alsun梦游的个人空间-哔哩哔哩】 https://b23.tv/ZnkaGRq
+
+
 > 🐳 DeepSeek 人鱼少女 艺术纪念PCB，嘉立创EDA开源硬件项目，双面艺术丝印，无电气功能，纯收藏向工艺板。
 
 ## 📖 项目简介
