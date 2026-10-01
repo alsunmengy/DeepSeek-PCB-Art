@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="60" viewBox="0 0 560 60" role="img" aria-label="如果这个项目帮到你，点一下 Star">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd33d"/><stop offset="55%" stop-color="#ffb800"/><stop offset="100%" stop-color="#ff8a00"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/><stop offset="50%" stop-color="#ffffff" stop-opacity=".75"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="60" rx="10" fill="url(#bg)"/>
+  <!-- 流光扫过 -->
+  <rect x="0" y="0" width="150" height="60" fill="url(#shine)" opacity=".8">
+    <animate attributeName="x" values="-160;560" dur="3.4s" repeatCount="indefinite"/>
+  </rect>
+  <!-- 星星（脉冲） -->
+  <g>
+    <path d="M27 15 l5.7 11.6 12.8 1.9 -9.2 9 2.2 12.7 -11.5-6.1 -11.5 6.1 2.2-12.7 -9.2-9 12.8-1.9z" fill="#fffdf0">
+      <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="1.9s" repeatCount="indefinite" additive="sum"/>
+      <animate attributeName="opacity" values="1;.78;1" dur="1.9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <text x="60" y="27" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="16" font-weight="700" fill="#3d2b00">如果这个项目帮到你，点一下 Star</text>
+  <text x="60" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="500" fill="#6b4e00">Star 是我继续更新的最大动力 · 开源不易，感谢支持</text>
+</svg>
