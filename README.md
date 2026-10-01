@@ -1,15 +1,11 @@
 
 # DeepSeek-Mermaid PCB Art
-<a href="https://github.com/alsunmengy"><img src="https://img.shields.io/github/followers/alsunmengy?style=for-the-badge&label=%E4%B8%80%E9%94%AE%E5%85%B3%E6%B3%A8&labelColor=%230969da&color=%230d1117" alt="一键关注" height="88"></a> <a href="https://github.com/alsunmengy/DeepSeek-PCB-Art"><img src="https://img.shields.io/github/stars/alsunmengy/DeepSeek-PCB-Art?style=for-the-badge&label=%E4%B8%80%E9%94%AEStar&labelColor=%23ffd33d&color=%230d1117" alt="一键Star" height="88"></a>
+<a href="https://github.com/alsunmengy"><img src="https://img.shields.io/github/followers/alsunmengy?style=for-the-badge&label=%E4%B8%80%E9%94%AE%E5%85%B3%E6%B3%A8&labelColor=%230969da&color=%230d1117" alt="一键关注" height="120"></a>
+<br>
+<a href="https://github.com/alsunmengy/DeepSeek-PCB-Art"><img src="https://img.shields.io/github/stars/alsunmengy/DeepSeek-PCB-Art?style=for-the-badge&label=%E4%B8%80%E9%94%AEStar&labelColor=%23ffd33d&color=%230d1117" alt="一键Star" height="120"></a>
 ## Star History
 
-<a href="https://www.star-history.com/?repos=alsunmengy%2Fdeepseek-pcb-art&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=alsunmengy/deepseek-pcb-art&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=alsunmengy/deepseek-pcb-art&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=alsunmengy/deepseek-pcb-art&type=date&legend=top-left" />
- </picture>
-</a>
+[![Star history](https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/star-history/chart.svg)](https://github.com/alsunmengy/DeepSeek-PCB-Art/stargazers)
 
 图作者【ZipZipPipe的个人空间-哔哩哔哩】 https://b23.tv/oK72DdM
 
