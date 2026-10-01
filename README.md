@@ -1,8 +1,8 @@
 
 # DeepSeek-Mermaid PCB Art
-<a href="https://github.com/alsunmengy/DeepSeek-PCB-Art/stargazers"><img src="https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/badges/star-banner" alt="点一下 Star" height="60"></a>
+<a href="https://github.com/alsunmengy/DeepSeek-PCB-Art/stargazers"><img src="https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/badges/star-banner.svg" alt="点一下 Star" height="60"></a>
 <br>
-<a href="https://github.com/alsunmengy"><img src="https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/badges/follow-me" alt="关注我" height="56"></a>
+<a href="https://github.com/alsunmengy"><img src="https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/badges/follow-me.svg" alt="关注我" height="56"></a>
 ## Star History
 
 [![Star history](https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/star-history/chart.svg)](https://github.com/alsunmengy/DeepSeek-PCB-Art/stargazers)
