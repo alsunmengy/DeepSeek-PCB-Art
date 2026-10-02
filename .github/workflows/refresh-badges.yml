@@ -53,11 +53,6 @@ jobs:
           print("repo =", repo, "stars =", stars, "followers =", followers)
           PY
 
-      - name: Regenerate star history chart
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 .github/scripts/gen_chart.py "$GITHUB_REPOSITORY" "#4D6BFE" .github/star-history/chart.svg
-
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
