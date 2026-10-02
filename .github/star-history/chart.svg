@@ -1,28 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" aria-labelledby="t d">
   <title id="t">alsunmengy/DeepSeek-PCB-Art star history</title>
-  <desc id="d">51 GitHub stars from 2026-09-06 to 2026-10-02</desc>
+  <desc id="d">51 GitHub stars from 2026-09-06 to 2026-10-02, 1 releases marked</desc>
   <defs>
     <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#4D6BFE" stop-opacity="0.30"/>
       <stop offset="100%" stop-color="#4D6BFE" stop-opacity="0.02"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="420" fill="#ffffff"/>
+  <rect width="800" height="460" fill="#ffffff"/>
   <style>
     .ttl{font:700 17px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;fill:#1f2328}
     .sub{font:400 12.5px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;fill:#656d76}
     .ax{font:400 11.5px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;fill:#656d76}
     .val{font:700 13px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;fill="#4D6BFE"}
+    .rel{font:400 10.5px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#6b7280}
   </style>
   <text x="60" y="30" class="ttl">★ alsunmengy/DeepSeek-PCB-Art · Star History</text>
-  <text x="60" y="50" class="sub">51 stars · 2026-09-06 → 2026-10-02（创建至今）</text>
-  <line x1="60.0" y1="374.0" x2="770.0" y2="374.0" stroke="#eaeaea" stroke-width="1"/><line x1="60.0" y1="298.0" x2="770.0" y2="298.0" stroke="#eaeaea" stroke-width="1"/><line x1="60.0" y1="222.0" x2="770.0" y2="222.0" stroke="#eaeaea" stroke-width="1"/><line x1="60.0" y1="146.0" x2="770.0" y2="146.0" stroke="#eaeaea" stroke-width="1"/><line x1="60.0" y1="70.0" x2="770.0" y2="70.0" stroke="#eaeaea" stroke-width="1"/>
-  <line x1="60.0" y1="70.0" x2="60.0" y2="374.0" stroke="#eaeaea" stroke-width="1"/><line x1="237.5" y1="70.0" x2="237.5" y2="374.0" stroke="#eaeaea" stroke-width="1"/><line x1="415.0" y1="70.0" x2="415.0" y2="374.0" stroke="#eaeaea" stroke-width="1"/><line x1="592.5" y1="70.0" x2="592.5" y2="374.0" stroke="#eaeaea" stroke-width="1"/><line x1="770.0" y1="70.0" x2="770.0" y2="374.0" stroke="#eaeaea" stroke-width="1"/>
-  <text x="52.0" y="378.0" text-anchor="end" class="ax">0</text><text x="52.0" y="302.0" text-anchor="end" class="ax">13</text><text x="52.0" y="226.0" text-anchor="end" class="ax">26</text><text x="52.0" y="150.0" text-anchor="end" class="ax">39</text><text x="52.0" y="74.0" text-anchor="end" class="ax">52</text>
-  <text x="60.0" y="394.0" text-anchor="middle" class="ax">09-06</text><text x="237.5" y="394.0" text-anchor="middle" class="ax">09-12</text><text x="415.0" y="394.0" text-anchor="middle" class="ax">09-19</text><text x="592.5" y="394.0" text-anchor="middle" class="ax">09-25</text><text x="770.0" y="394.0" text-anchor="middle" class="ax">10-02</text>
-  <polygon points="60.0,374.0 61.2,368.2 422.2,362.3 424.0,356.5 440.3,350.6 445.3,344.8 452.6,338.9 454.8,333.1 464.8,327.2 467.9,321.4 468.6,315.5 468.9,309.7 471.3,303.8 471.3,298.0 474.0,292.2 474.9,286.3 478.1,280.5 485.4,274.6 492.4,268.8 496.0,262.9 499.0,257.1 499.8,251.2 503.7,245.4 518.1,239.5 521.9,233.7 523.1,227.8 527.0,222.0 534.5,216.2 541.0,210.3 551.4,204.5 556.0,198.6 556.0,192.8 570.7,186.9 578.0,181.1 578.5,175.2 582.7,169.4 585.8,163.5 588.4,157.7 588.6,151.8 589.9,146.0 603.6,140.2 607.7,134.3 639.7,128.5 639.8,122.6 661.6,116.8 665.4,110.9 667.8,105.1 717.7,99.2 732.9,93.4 740.0,87.5 746.3,81.7 751.4,75.8 770.0,75.8 770.0,374.0 60.0,374.0" fill="url(#fill)"/>
-  <polyline points="60.0,374.0 61.2,368.2 422.2,362.3 424.0,356.5 440.3,350.6 445.3,344.8 452.6,338.9 454.8,333.1 464.8,327.2 467.9,321.4 468.6,315.5 468.9,309.7 471.3,303.8 471.3,298.0 474.0,292.2 474.9,286.3 478.1,280.5 485.4,274.6 492.4,268.8 496.0,262.9 499.0,257.1 499.8,251.2 503.7,245.4 518.1,239.5 521.9,233.7 523.1,227.8 527.0,222.0 534.5,216.2 541.0,210.3 551.4,204.5 556.0,198.6 556.0,192.8 570.7,186.9 578.0,181.1 578.5,175.2 582.7,169.4 585.8,163.5 588.4,157.7 588.6,151.8 589.9,146.0 603.6,140.2 607.7,134.3 639.7,128.5 639.8,122.6 661.6,116.8 665.4,110.9 667.8,105.1 717.7,99.2 732.9,93.4 740.0,87.5 746.3,81.7 751.4,75.8 770.0,75.8" fill="none" stroke="#4D6BFE" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="770.0" cy="75.8" r="4.5" fill="#4D6BFE" stroke="#ffffff" stroke-width="2"/>
-  <text x="764.0" y="63.8" text-anchor="end" class="val">★ 51</text>
-  <text x="60" y="408" class="ax">Source: GitHub stargazers API · auto-updated</text>
+  <text x="60" y="50" class="sub">51 stars · 2026-09-06 → 2026-10-02（创建至今）  ·  1 个 release</text>
+  <line x1="60.0" y1="414.0" x2="770.0" y2="414.0" stroke="#eaeaea" stroke-width="1"/><line x1="60.0" y1="338.5" x2="770.0" y2="338.5" stroke="#eaeaea" stroke-width="1"/><line x1="60.0" y1="263.0" x2="770.0" y2="263.0" stroke="#eaeaea" stroke-width="1"/><line x1="60.0" y1="187.5" x2="770.0" y2="187.5" stroke="#eaeaea" stroke-width="1"/><line x1="60.0" y1="112.0" x2="770.0" y2="112.0" stroke="#eaeaea" stroke-width="1"/>
+  <line x1="60.0" y1="112.0" x2="60.0" y2="414.0" stroke="#eaeaea" stroke-width="1"/><line x1="237.5" y1="112.0" x2="237.5" y2="414.0" stroke="#eaeaea" stroke-width="1"/><line x1="415.0" y1="112.0" x2="415.0" y2="414.0" stroke="#eaeaea" stroke-width="1"/><line x1="592.5" y1="112.0" x2="592.5" y2="414.0" stroke="#eaeaea" stroke-width="1"/><line x1="770.0" y1="112.0" x2="770.0" y2="414.0" stroke="#eaeaea" stroke-width="1"/>
+  <line x1="60.3" y1="112.0" x2="60.3" y2="414.0" stroke="#b9b9b9" stroke-width="1" stroke-dasharray="4 4"/>
+  <text transform="translate(64.3,104.0) rotate(-90)" class="rel">鱼！！！</text>
+  <text x="52.0" y="418.0" text-anchor="end" class="ax">0</text><text x="52.0" y="342.5" text-anchor="end" class="ax">13</text><text x="52.0" y="267.0" text-anchor="end" class="ax">26</text><text x="52.0" y="191.5" text-anchor="end" class="ax">39</text><text x="52.0" y="116.0" text-anchor="end" class="ax">52</text>
+  <text x="60.0" y="434.0" text-anchor="middle" class="ax">09-06</text><text x="237.5" y="434.0" text-anchor="middle" class="ax">09-12</text><text x="415.0" y="434.0" text-anchor="middle" class="ax">09-19</text><text x="592.5" y="434.0" text-anchor="middle" class="ax">09-25</text><text x="770.0" y="434.0" text-anchor="middle" class="ax">10-02</text>
+  <polygon points="60.0,414.0 61.2,408.2 422.1,402.4 423.9,396.6 440.2,390.8 445.2,385.0 452.5,379.2 454.7,373.3 464.6,367.5 467.8,361.7 468.5,355.9 468.8,350.1 471.2,344.3 471.2,338.5 473.8,332.7 474.7,326.9 478.0,321.1 485.3,315.3 492.3,309.5 495.9,303.7 498.9,297.8 499.7,292.0 503.6,286.2 518.0,280.4 521.8,274.6 523.0,268.8 526.9,263.0 534.3,257.2 540.8,251.4 551.2,245.6 555.8,239.8 555.9,234.0 570.6,228.2 577.9,222.3 578.4,216.5 582.6,210.7 585.6,204.9 588.2,199.1 588.5,193.3 589.8,187.5 603.5,181.7 607.6,175.9 639.5,170.1 639.6,164.3 661.5,158.5 665.3,152.7 667.7,146.8 717.5,141.0 732.7,135.2 739.8,129.4 746.2,123.6 751.2,117.8 770.0,117.8 770.0,414.0 60.0,414.0" fill="url(#fill)"/>
+  <polyline points="60.0,414.0 61.2,408.2 422.1,402.4 423.9,396.6 440.2,390.8 445.2,385.0 452.5,379.2 454.7,373.3 464.6,367.5 467.8,361.7 468.5,355.9 468.8,350.1 471.2,344.3 471.2,338.5 473.8,332.7 474.7,326.9 478.0,321.1 485.3,315.3 492.3,309.5 495.9,303.7 498.9,297.8 499.7,292.0 503.6,286.2 518.0,280.4 521.8,274.6 523.0,268.8 526.9,263.0 534.3,257.2 540.8,251.4 551.2,245.6 555.8,239.8 555.9,234.0 570.6,228.2 577.9,222.3 578.4,216.5 582.6,210.7 585.6,204.9 588.2,199.1 588.5,193.3 589.8,187.5 603.5,181.7 607.6,175.9 639.5,170.1 639.6,164.3 661.5,158.5 665.3,152.7 667.7,146.8 717.5,141.0 732.7,135.2 739.8,129.4 746.2,123.6 751.2,117.8 770.0,117.8" fill="none" stroke="#4D6BFE" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="770.0" cy="117.8" r="4.5" fill="#4D6BFE" stroke="#ffffff" stroke-width="2"/>
+  <text x="764.0" y="105.8" text-anchor="end" class="val">★ 51</text>
+  <text x="60" y="448" class="ax">Source: GitHub stargazers &amp; releases API · auto-updated</text>
 </svg>
