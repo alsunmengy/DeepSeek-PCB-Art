@@ -1,0 +1,69 @@
+name: Refresh badge numbers
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rewrite star / follower counts inside badge SVGs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os, re, json, urllib.request
+
+          def get(url):
+              req = urllib.request.Request(url, headers={
+                  "Authorization": "Bearer " + os.environ["GH_TOKEN"],
+                  "Accept": "application/vnd.github+json"})
+              return json.load(urllib.request.urlopen(req))
+
+          repo = os.environ["GITHUB_REPOSITORY"]
+          stars = get("https://api.github.com/repos/" + repo)["stargazers_count"]
+          followers = get("https://api.github.com/users/alsunmengy")["followers_count"]
+
+          def fmt(n):
+              return ("%.1fk" % (n / 1000)).replace(".0k", "k") if n >= 1000 else str(n)
+
+          jobs = [
+              (".github/badges/star-banner.svg",
+               r"(★ )[\d.,km]+",
+               lambda m: m.group(1) + fmt(stars)),
+              (".github/badges/follow-me.svg",
+               r">[\d.,km]+(?= 人关注)",
+               lambda m: fmt(followers)),
+          ]
+          dirty = False
+          for path, pattern, repl in jobs:
+              if not os.path.exists(path):
+                  continue
+              src = open(path, encoding="utf-8").read()
+              dst = re.sub(pattern, repl, src)
+              if dst != src:
+                  open(path, "w", encoding="utf-8").write(dst)
+                  print("updated", path)
+                  dirty = True
+          print("stars =", stars, "followers =", followers)
+          open(os.environ["GITHUB_OUTPUT"], "a").write("dirty=%s\n" % str(dirty).lower())
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/badges
+          if git diff --cached --quiet; then
+            echo "no change"
+          else
+            git commit -m "chore: refresh badge counts"
+            git push
+          fi
