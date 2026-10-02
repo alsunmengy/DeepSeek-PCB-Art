@@ -2,7 +2,7 @@ name: Refresh badge numbers
 
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "23 */12 * * *"
   workflow_dispatch:
 
 permissions:
@@ -29,20 +29,19 @@ jobs:
 
           repo = os.environ["GITHUB_REPOSITORY"]
           stars = get("https://api.github.com/repos/" + repo)["stargazers_count"]
-          followers = get("https://api.github.com/users/alsunmengy")["followers"]
+          followers = get("https://api.github.com/users/alsunmengy")["followers_count" if False else "followers"]
 
           def fmt(n):
               return ("%.1fk" % (n / 1000)).replace(".0k", "k") if n >= 1000 else str(n)
 
           jobs = [
               (".github/badges/star-banner.svg",
-               r"(★ )[\d.,km]+",
+               r"(star)[0-9.,km]+".replace("star", "\u2605 "),
                lambda m: m.group(1) + fmt(stars)),
               (".github/badges/follow-me.svg",
-               r">[\d.,km]+(?= 人关注)",
+               r"(?<=>)[0-9.,km]+(?= 人关注)",
                lambda m: fmt(followers)),
           ]
-          dirty = False
           for path, pattern, repl in jobs:
               if not os.path.exists(path):
                   continue
@@ -51,9 +50,7 @@ jobs:
               if dst != src:
                   open(path, "w", encoding="utf-8").write(dst)
                   print("updated", path)
-                  dirty = True
-          print("stars =", stars, "followers =", followers)
-          open(os.environ["GITHUB_OUTPUT"], "a").write("dirty=%s\n" % str(dirty).lower())
+          print("repo =", repo, "stars =", stars, "followers =", followers)
           PY
 
       - name: Commit if changed
