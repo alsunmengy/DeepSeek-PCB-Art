@@ -29,7 +29,7 @@ jobs:
 
           repo = os.environ["GITHUB_REPOSITORY"]
           stars = get("https://api.github.com/repos/" + repo)["stargazers_count"]
-          followers = get("https://api.github.com/users/alsunmengy")["followers_count"]
+          followers = get("https://api.github.com/users/alsunmengy")["followers"]
 
           def fmt(n):
               return ("%.1fk" % (n / 1000)).replace(".0k", "k") if n >= 1000 else str(n)
