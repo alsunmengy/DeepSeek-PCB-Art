@@ -1,10 +1,13 @@
 name: Update star history
+
 on:
   schedule:
-    - cron: '17 3 * * *'  # 每天 UTC 3:17 运行
-  workflow_dispatch:      # 支持手动触发
+    - cron: "17 3 * * *"   # 每天 UTC 3:17
+  workflow_dispatch:
+
 permissions:
-  contents: write         # 允许提交文件
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -13,14 +16,16 @@ jobs:
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
-      - uses: nicoloboschi/gh-stars@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          line-color: '#14b8a6'  # 可自定义线条颜色
+
+      - name: Regenerate chart (创立至今 · 角色主题色)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/gen_chart.py "$GITHUB_REPOSITORY" "#4D6BFE" .github/star-history/chart.svg
+
       - name: Commit chart
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add .github/star-history/data.json .github/star-history/chart.svg
-          git diff --cached --quiet || git commit -m 'chore: update star history'
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/star-history/chart.svg
+          git diff --cached --quiet || git commit -m "chore: update star history"
           git push
