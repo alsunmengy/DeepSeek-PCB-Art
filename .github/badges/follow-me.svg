@@ -1,30 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="64" viewBox="0 0 300 64" role="img" aria-label="关注我">
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="60" viewBox="0 0 560 60" role="img" aria-label="关注我">
   <defs>
-    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#58a6ff"/><stop offset="100%" stop-color="#1f6feb"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a6ff"/><stop offset="55%" stop-color="#2f81f7"/><stop offset="100%" stop-color="#1f6feb"/>
     </linearGradient>
-    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#79c0ff"/><stop offset="100%" stop-color="#0d419d"/>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/><stop offset="50%" stop-color="#ffffff" stop-opacity=".75"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <filter id="gl" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <!-- 外发光（呼吸） -->
-  <rect x="2" y="2" width="296" height="60" rx="30" fill="url(#bg2)" opacity=".55">
-    <animate attributeName="opacity" values=".32;.72;.32" dur="2.6s" repeatCount="indefinite"/>
+  <rect width="560" height="60" rx="10" fill="url(#bg)"/>
+  <!-- 流光扫过 -->
+  <rect x="0" y="0" width="150" height="60" fill="url(#shine)" opacity=".7">
+    <animate attributeName="x" values="-160;560" dur="3.4s" repeatCount="indefinite"/>
   </rect>
-  <rect x="5" y="5" width="290" height="54" rx="27" fill="url(#bg1)"/>
-  <g filter="url(#gl)" stroke="#ffffff" stroke-width="2.4" fill="none" stroke-linecap="round">
-    <circle cx="42" cy="25" r="8.5"/>
-    <path d="M27 46 c0-8 6.5-13 15-13 s15 5 15 13"/>
+  <!-- 人物图标 -->
+  <g filter="url(#gl)" stroke="#ffffff" stroke-width="2.6" fill="none" stroke-linecap="round">
+    <circle cx="42" cy="24" r="9"/>
+    <path d="M27 47 c0-8.5 6.7-14 15-14 s15 5.5 15 14"/>
   </g>
   <!-- 加号图标（上下浮动） -->
   <g>
-    <circle cx="60" cy="21" r="8.5" fill="#0d1117" stroke="#ffffff" stroke-width="2"/>
-    <path d="M60 17 v8 M56 21 h8" stroke="#58a6ff" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="63" cy="20" r="9" fill="#0d1117" stroke="#ffffff" stroke-width="2"/>
+    <path d="M63 15.5 v9 M58.5 20 h9" stroke="#79c0ff" stroke-width="2.6" stroke-linecap="round"/>
     <animateTransform attributeName="transform" type="translate" values="0 0;0 -2.6;0 0" dur="1.7s" repeatCount="indefinite"/>
   </g>
-  <text x="86" y="34" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="20" font-weight="800" fill="#ffffff">关注我</text>
-  <text x="86" y="50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="500" fill="#cfe4ff">更新不再错过</text>
+  <text x="90" y="27" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="16" font-weight="700" fill="#ffffff">如果这个项目有意思，点一下 Follow</text>
+  <text x="90" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="500" fill="#dceeff">关注我不迷路 · 新项目上线第一时间通知你</text>
 </svg>
