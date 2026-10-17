@@ -152,9 +152,9 @@ def gen(repo, accent, gold, stars, created, releases, bg_path=None, charlabel=""
       <stop offset="100%" stop-color="{accent}" stop-opacity="0.02"/>
     </linearGradient>
     <linearGradient id="veil" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.90"/>
-      <stop offset="24%" stop-color="#ffffff" stop-opacity="0.44"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.42"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.88"/>
+      <stop offset="22%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.26"/>
     </linearGradient>
   </defs>
   <rect width="{W}" height="{H}" fill="#f7f5fb"/>
@@ -176,6 +176,7 @@ def gen(repo, accent, gold, stars, created, releases, bg_path=None, charlabel=""
   {''.join(ylabels)}
   {''.join(xlabels)}
   <polygon points="{area}" fill="url(#fill)"/>
+  <polyline points="{line}" fill="none" stroke="#ffffff" stroke-opacity="0.72" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round"/>
   <polyline points="{line}" fill="none" stroke="{accent}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="{end_x:.1f}" cy="{end_y:.1f}" r="4.5" fill="{accent}" stroke="#ffffff" stroke-width="2"/>
   <text x="{label_x:.1f}" y="{end_y - 12:.1f}" text-anchor="end" class="val">★ {total}</text>
