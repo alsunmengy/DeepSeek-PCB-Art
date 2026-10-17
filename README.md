@@ -7,7 +7,7 @@
 ## Star History
 
 [![Star history](https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/star-history/chart.svg)](https://github.com/alsunmengy/DeepSeek-PCB-Art/stargazers)
-
+<img src="https://whale-star.whale-star.workers.dev/?repo=alsunmengy/DeepSeek-PCB-Art" alt="star 大肥鱼" width="600" />
 图作者【ZipZipPipe的个人空间-哔哩哔哩】 https://b23.tv/oK72DdM
 
 PCB作者【Alsun梦游的个人空间-哔哩哔哩】 https://b23.tv/ZnkaGRq
