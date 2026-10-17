@@ -17,10 +17,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Regenerate chart (创立至今 · 角色主题色)
+      - name: Regenerate chart (创立至今 · 主题色 + 插画背景)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 .github/scripts/gen_chart.py "$GITHUB_REPOSITORY" "#4D6BFE" .github/star-history/chart.svg
+        run: |
+          python3 .github/scripts/gen_chart.py "$GITHUB_REPOSITORY" "#4D6BFE" .github/star-history/chart.svg "#B07E1E" .github/star-history/bg.jpg "DeepSeek 人鱼少女"
 
       - name: Commit chart
         run: |
