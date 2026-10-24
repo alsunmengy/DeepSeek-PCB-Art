@@ -37,18 +37,19 @@ PCB作者【Alsun梦游的个人空间-哔哩哔哩】 https://b23.tv/ZnkaGRq
 ## 📂 文件说明
 ```
 DeepSeek-PCB-Art/
-├─ ProPrj_deepseek_2026-09-06.epro2    # 嘉立创EDA 专业版工程源文件（可直接导入）
-├─ Gerber_PCB1_2026-09-06.zip          # Gerber 生产文件（可直接提交工厂打样）
 ├─ 使用的文件/                          # 设计源素材（插画 / Logo 原图，可二次编辑）
+├─ 男deek/                              # 男版设计素材
 ├─ LICENSE                             # 开源协议（CC BY-NC-SA 4.0，详见「开源协议」章节）
 ├─ README.md                           # 项目说明文档
 └─ .gitignore
 ```
 
+> 📦 工程源文件（`.epro2`）与 Gerber 压缩包统一在 [Releases](https://github.com/alsunmengy/DeepSeek-PCB-Art/releases) 页面下载。请优先选择标注「推荐」的最新版本，旧版本保留在 Releases 历史中。
+
 ## 🛠️ 使用方式
 ### 方式1：嘉立创EDA源工程
 1. 打开嘉立创EDA专业版；
-2. 文件 → 导入，选择本项目内的`ProPrj_deepseek_2026-09-06.epro2`；
+2. 文件 → 导入，选择从 [Releases](https://github.com/alsunmengy/DeepSeek-PCB-Art/releases) 下载的 `.epro2` 工程文件（推荐最新版「鱼2」/「MAN!!」）；
 3. 核对：板厚、丝印工艺、阻焊层颜色（白色）；
 4. 直接提交打样。
 
@@ -59,7 +60,7 @@ DeepSeek-PCB-Art/
 > 4. 彩色丝印存在轻微色彩偏差属于工厂正常现象。
 
 ### 方式2：Gerber生产文件
-直接使用 `Gerber_PCB1_2026-09-06.zip` 提交 PCB 工厂生产，注意和工厂确认支持**双面彩色丝印+沉金/镀金**工艺。
+在 [Releases](https://github.com/alsunmengy/DeepSeek-PCB-Art/releases) 下载对应版本的 Gerber 压缩包（推荐 `Gerber_PCB1_2026-10-11.zip`）提交 PCB 工厂生产，注意和工厂确认支持**双面彩色丝印+沉金/镀金**工艺。
 
 ## 📋 打样参数（嘉立创下单页参考值）
 
