@@ -1,4 +1,4 @@
-name: Update star history
+name: Update star & download history
 
 on:
   schedule:
@@ -12,21 +12,21 @@ jobs:
   update:
     runs-on: ubuntu-latest
     concurrency:
-      group: star-history
+      group: charts
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
 
-      - name: Regenerate chart (创立至今 · 主题色 + 插画背景)
+      - name: Snapshot download counts + regenerate combined chart
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 .github/scripts/gen_chart.py "$GITHUB_REPOSITORY" "#4D6BFE" .github/star-history/chart.svg "#B07E1E" .github/star-history/bg.jpg "DeepSeek 人鱼少女"
+          python3 .github/scripts/gen_combo_chart.py "$GITHUB_REPOSITORY" "#4D6BFE" .github/charts/chart.svg "" "DeepSeek 人鱼少女" --snapshot
 
-      - name: Commit chart
+      - name: Commit chart + snapshot history
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/star-history/chart.svg
-          git diff --cached --quiet || git commit -m "chore: update star history"
+          git add .github/charts/chart.svg .github/download-history/history.json
+          git diff --cached --quiet || git commit -m "chore: update star & download history"
           git push

@@ -4,19 +4,15 @@
 <br>
 <a href="https://github.com/alsunmengy"><img src="https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/badges/follow-me.svg" alt="关注我" height="60"></a>
 
-## Star History
+## Star & Download History
 
-[![Star history](https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/star-history/chart.svg)](https://github.com/alsunmengy/DeepSeek-PCB-Art/stargazers)
+[![Star & download history](https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/charts/chart.svg)](https://github.com/alsunmengy/DeepSeek-PCB-Art/stargazers)
 <img src="https://whale-star.whale-star.workers.dev/?repo=alsunmengy/DeepSeek-PCB-Art" alt="star 大肥鱼" width="600" />
 图作者【ZipZipPipe的个人空间-哔哩哔哩】 https://b23.tv/oK72DdM
 
 PCB作者【Alsun梦游的个人空间-哔哩哔哩】 https://b23.tv/ZnkaGRq
 
-## Download History
-
-[![Download history](https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/download-history/chart.svg)](https://github.com/alsunmengy/DeepSeek-PCB-Art/releases)
-
-> 每天 UTC 3:20 自动快照 Release 下载量并提交，从 2026-11-15 起累积真实曲线；此前的区间按 release 发布时间回推，图上虚线标注为估算。
+> 上图上半是 star 累积，下半是 Release 下载累积，共用一条时间轴；竖虚线是发版时间。每天 UTC 3:10 自动重新采集并提交。
 
 
 > 🐳 DeepSeek 人鱼少女 艺术纪念PCB，嘉立创EDA开源硬件项目，双面艺术丝印，无电气功能，纯收藏向工艺板。
