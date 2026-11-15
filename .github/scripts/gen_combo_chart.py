@@ -31,8 +31,10 @@ HIST = ".github/download-history/history.json"
 
 
 def gh(args):
-    out = subprocess.run(["gh", "api"] + args, capture_output=True, text=True, check=True).stdout
-    return json.loads(out)
+    r = subprocess.run(["gh", "api"] + args, capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError("gh api %s failed (%d): %s" % (" ".join(args), r.returncode, r.stderr.strip()[:600]))
+    return json.loads(r.stdout)
 
 
 def parse_t(s):
@@ -263,7 +265,7 @@ def build_dl_curve(assets, snaps, t0, t1, cur_total, n=96):
     return pts
 
 
-def gen(repo, accent, created, stars, releases, assets, snapshots, now, bg_path=None, charlabel=""):
+def gen(repo, accent, created, stars, releases, assets, snapshots, now, bg_path=None, charlabel="", gold=GOLD):
     t = totals(assets)
     total_dl = t["total"]
     t0, t1 = created, now
@@ -356,7 +358,7 @@ def gen(repo, accent, created, stars, releases, assets, snapshots, now, bg_path=
             groups.append([x, [r["tag"]]])
     for i, (x, tags) in enumerate(groups):
         rel_lines.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="%s" stroke-opacity="0.55" stroke-width="1.1" stroke-dasharray="4 4"/>'
-                         % (x, P1_TOP, x, P2_TOP + P2_H, GOLD))
+                         % (x, P1_TOP, x, P2_TOP + P2_H, gold))
         label = " / ".join(tags)
         if len(label) > 14:
             label = label[:13] + "…"
@@ -381,10 +383,9 @@ def gen(repo, accent, created, stars, releases, assets, snapshots, now, bg_path=
       <stop offset="100%" stop-color="{accent}" stop-opacity="0.02"/>
     </linearGradient>
     <linearGradient id="veil" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
-      <stop offset="16%" stop-color="#ffffff" stop-opacity="0.74"/>
-      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.66"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.70"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.88"/>
+      <stop offset="22%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.26"/>
     </linearGradient>
   </defs>
   <rect width="{W}" height="{H}" fill="#f7f5fb"/>
@@ -396,7 +397,7 @@ def gen(repo, accent, created, stars, releases, assets, snapshots, now, bg_path=
     .pt{{font:700 12.5px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;fill:#3b3355;stroke:#ffffff;stroke-opacity:0.9;stroke-width:3;paint-order:stroke fill}}
     .ax{{font:400 11.5px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;fill:#4f4864;stroke:#ffffff;stroke-opacity:0.85;stroke-width:2.6;paint-order:stroke fill}}
     .val{{font:700 13px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;fill="{accent}";stroke:#ffffff;stroke-opacity:0.9;stroke-width:2.8;paint-order:stroke fill}}
-    .rel{{font:400 10.5px ui-monospace,SFMono-Regular,Menlo,monospace;fill:{GOLD}}}
+    .rel{{font:400 10.5px ui-monospace,SFMono-Regular,Menlo,monospace;fill:{gold}}}
   </style>
   <text x="{M_L}" y="30" class="ttl">★⬇ {esc(repo)} · Star &amp; Download History</text>
   <text x="{M_L}" y="50" class="sub">{((charlabel + ' · ') if charlabel else '')}{n_star} stars · {total_dl} 次下载（Gerber {t["gerber"]} · 工程 {t["proj"]}{(" · 图 " + str(t["other"])) if t["other"] else ""}） · {t0.date()} → {t1.date()}</text>
@@ -431,6 +432,7 @@ if __name__ == "__main__":
     repo, accent, out = args[0], args[1], args[2]
     bgp = args[3] if len(args) > 3 and args[3] else DEFAULT_BG
     charlabel = args[4] if len(args) > 4 else ""
+    gold = args[5] if len(args) > 5 and args[5] else GOLD
 
     created, stars, releases, assets = fetch(repo)
     t = totals(assets)
@@ -439,7 +441,7 @@ if __name__ == "__main__":
     snapshots = hist.get("snapshots", [])
 
     svg = gen(repo, accent, created, stars, releases, assets, snapshots, now,
-              bgp if os.path.exists(bgp) else None, charlabel)
+              bgp if os.path.exists(bgp) else None, charlabel, gold)
     os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
     open(out, "w", encoding="utf-8").write(svg)
     print("%s -> %d stars, %d downloads (%d assets), %d snapshots, svg %d bytes"
