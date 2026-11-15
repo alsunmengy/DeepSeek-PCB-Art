@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" aria-labelledby="t d">
+  <title id="t">alsunmengy/DeepSeek-PCB-Art download history</title>
+  <desc id="d">1084 total release downloads, 523 Gerber, 534 project files</desc>
+  <defs>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4D6BFE" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#4D6BFE" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="veil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.88"/>
+      <stop offset="22%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.26"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="460" fill="#f7f5fb"/>
+  
+  <rect width="800" height="460" fill="url(#veil)"/>
+  <style>
+    .ttl{font:700 17px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;fill:#2b2440;stroke:#ffffff;stroke-opacity:0.92;stroke-width:3.4;paint-order:stroke fill}
+    .sub{font:400 12.5px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;fill:#514a66;stroke:#ffffff;stroke-opacity:0.88;stroke-width:2.8;paint-order:stroke fill}
+    .ax{font:400 11.5px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;fill:#4f4864;stroke:#ffffff;stroke-opacity:0.85;stroke-width:2.6;paint-order:stroke fill}
+    .val{font:700 13px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;fill="#4D6BFE";stroke:#ffffff;stroke-opacity:0.9;stroke-width:2.8;paint-order:stroke fill}
+    .rel{font:400 10.5px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#B07E1E}
+    .lg{font:400 11px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;fill:#4f4864;stroke:#ffffff;stroke-opacity:0.85;stroke-width:2.6;paint-order:stroke fill}
+  </style>
+  <text x="60" y="30" class="ttl">⬇ alsunmengy/DeepSeek-PCB-Art · Download History</text>
+  <text x="60" y="50" class="sub">1084 次下载 · Gerber 523 · 工程文件 534  ·  图片 27 · 2026-09-06 → 2026-11-15</text>
+  <g transform="translate(72,130)">
+    <rect x="0" y="-7" width="14" height="3" fill="#4D6BFE"/><text x="19" y="0" class="lg">总下载</text>
+    <rect x="70" y="-7" width="14" height="3" fill="#B07E1E"/><text x="89" y="0" class="lg">Gerber</text>
+    <rect x="140" y="-7" width="14" height="3" fill="#5A3FA8"/><text x="159" y="0" class="lg">工程</text>
+  </g>
+  <line x1="60.0" y1="414.0" x2="770.0" y2="414.0" stroke="#8f86ad" stroke-opacity="0.28" stroke-width="1"/><line x1="60.0" y1="338.5" x2="770.0" y2="338.5" stroke="#8f86ad" stroke-opacity="0.28" stroke-width="1"/><line x1="60.0" y1="263.0" x2="770.0" y2="263.0" stroke="#8f86ad" stroke-opacity="0.28" stroke-width="1"/><line x1="60.0" y1="187.5" x2="770.0" y2="187.5" stroke="#8f86ad" stroke-opacity="0.28" stroke-width="1"/><line x1="60.0" y1="112.0" x2="770.0" y2="112.0" stroke="#8f86ad" stroke-opacity="0.28" stroke-width="1"/>
+  <line x1="60.0" y1="112.0" x2="60.0" y2="414.0" stroke="#8f86ad" stroke-opacity="0.28" stroke-width="1"/><line x1="237.5" y1="112.0" x2="237.5" y2="414.0" stroke="#8f86ad" stroke-opacity="0.28" stroke-width="1"/><line x1="415.0" y1="112.0" x2="415.0" y2="414.0" stroke="#8f86ad" stroke-opacity="0.28" stroke-width="1"/><line x1="592.5" y1="112.0" x2="592.5" y2="414.0" stroke="#8f86ad" stroke-opacity="0.28" stroke-width="1"/><line x1="770.0" y1="112.0" x2="770.0" y2="414.0" stroke="#8f86ad" stroke-opacity="0.28" stroke-width="1"/>
+  <line x1="60.1" y1="112.0" x2="60.1" y2="414.0" stroke="#B07E1E" stroke-opacity="0.7" stroke-width="1.2" stroke-dasharray="4 4"/><line x1="412.4" y1="112.0" x2="412.4" y2="414.0" stroke="#B07E1E" stroke-opacity="0.7" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="64.1" y="104.0" text-anchor="start" class="rel">鱼！！！</text><text x="416.4" y="89.0" text-anchor="start" class="rel">鱼2 / MAN!!</text>
+  <text x="52.0" y="408.0" text-anchor="end" class="ax">0</text><text x="52.0" y="342.5" text-anchor="end" class="ax">300</text><text x="52.0" y="267.0" text-anchor="end" class="ax">600</text><text x="52.0" y="191.5" text-anchor="end" class="ax">900</text><text x="52.0" y="125.0" text-anchor="end" class="ax">1200</text>
+  <text x="60.0" y="434.0" text-anchor="start" class="ax">09-06</text><text x="237.5" y="434.0" text-anchor="middle" class="ax">09-23</text><text x="415.0" y="434.0" text-anchor="middle" class="ax">10-11</text><text x="592.5" y="434.0" text-anchor="middle" class="ax">10-28</text><text x="770.0" y="434.0" text-anchor="end" class="ax">11-15</text>
+  <polygon points="60.0,414.0 69.9,396.6 79.7,381.6 89.6,368.8 99.4,358.0 109.3,348.8 119.2,341.0 129.0,334.3 138.9,328.7 148.7,323.9 158.6,319.8 168.5,316.3 178.3,313.4 188.2,310.9 198.1,308.8 207.9,307.0 217.8,305.4 227.6,304.1 237.5,303.0 247.4,302.1 257.2,301.3 267.1,300.6 276.9,300.0 286.8,299.5 296.7,299.1 306.5,298.7 316.4,298.4 326.2,298.2 336.1,298.0 346.0,297.8 355.8,297.6 365.7,297.5 375.6,297.4 385.4,297.3 395.3,297.2 405.1,297.1 415.0,292.2 424.9,270.5 434.7,252.0 444.6,236.3 454.4,223.0 464.3,211.7 474.2,202.0 484.0,193.3 493.9,185.4 503.8,178.7 513.6,173.0 523.5,168.1 533.3,164.0 543.2,160.5 553.1,157.6 562.9,155.0 572.8,152.9 582.6,151.1 592.5,149.5 602.4,148.2 612.2,147.1 622.1,146.1 631.9,145.3 641.8,144.6 651.7,144.0 661.5,143.5 671.4,143.1 681.3,142.8 691.1,142.4 701.0,142.2 710.8,142.0 720.7,141.8 730.6,141.6 740.4,141.5 750.3,141.4 760.1,141.3 770.0,141.2 770.0,414.0 60.0,414.0" fill="url(#fill)"/>
+  <polyline points="60.0,414.0 69.9,396.6 79.7,381.6 89.6,368.8 99.4,358.0 109.3,348.8 119.2,341.0 129.0,334.3 138.9,328.7 148.7,323.9 158.6,319.8 168.5,316.3 178.3,313.4 188.2,310.9 198.1,308.8 207.9,307.0 217.8,305.4 227.6,304.1 237.5,303.0 247.4,302.1 257.2,301.3 267.1,300.6 276.9,300.0 286.8,299.5 296.7,299.1 306.5,298.7 316.4,298.4 326.2,298.2 336.1,298.0 346.0,297.8 355.8,297.6 365.7,297.5 375.6,297.4 385.4,297.3 395.3,297.2 405.1,297.1 415.0,292.2 424.9,270.5 434.7,252.0 444.6,236.3 454.4,223.0 464.3,211.7 474.2,202.0 484.0,193.3 493.9,185.4 503.8,178.7 513.6,173.0 523.5,168.1 533.3,164.0 543.2,160.5 553.1,157.6 562.9,155.0 572.8,152.9 582.6,151.1 592.5,149.5 602.4,148.2 612.2,147.1 622.1,146.1 631.9,145.3 641.8,144.6 651.7,144.0 661.5,143.5 671.4,143.1 681.3,142.8 691.1,142.4 701.0,142.2 710.8,142.0 720.7,141.8 730.6,141.6 740.4,141.5 750.3,141.4 760.1,141.3 770.0,141.2" fill="none" stroke="#4D6BFE" stroke-opacity="0.55" stroke-width="1.8" stroke-dasharray="5 5" stroke-linejoin="round"/>
+  <polyline points="60.0,414.0 69.9,404.8 79.7,396.8 89.6,390.1 99.4,384.3 109.3,379.4 119.2,375.3 129.0,371.8 138.9,368.8 148.7,366.2 158.6,364.1 168.5,362.2 178.3,360.7 188.2,359.4 198.1,358.2 207.9,357.3 217.8,356.4 227.6,355.8 237.5,355.2 247.4,354.7 257.2,354.2 267.1,353.9 276.9,353.6 286.8,353.3 296.7,353.1 306.5,352.9 316.4,352.7 326.2,352.6 336.1,352.5 346.0,352.4 355.8,352.3 365.7,352.2 375.6,352.2 385.4,352.1 395.3,352.1 405.1,352.0 415.0,349.8 424.9,339.6 434.7,331.0 444.6,323.7 454.4,317.4 464.3,312.1 474.2,307.6 484.0,303.8 493.9,300.6 503.8,297.8 513.6,295.5 523.5,293.5 533.3,291.8 543.2,290.3 553.1,289.1 562.9,288.1 572.8,287.2 582.6,286.4 592.5,285.8 602.4,285.3 612.2,284.8 622.1,284.4 631.9,284.1 641.8,283.8 651.7,283.5 661.5,283.3 671.4,283.2 681.3,283.0 691.1,282.9 701.0,282.8 710.8,282.7 720.7,282.6 730.6,282.6 740.4,282.5 750.3,282.5 760.1,282.4 770.0,282.4" fill="none" stroke="#B07E1E" stroke-opacity="0.75" stroke-width="1.4" stroke-dasharray="4 4" stroke-linejoin="round"/>
+  <polyline points="60.0,414.0 69.9,405.8 79.7,398.8 89.6,392.8 99.4,387.7 109.3,383.4 119.2,379.7 129.0,376.6 138.9,373.9 148.7,371.7 158.6,369.7 168.5,368.1 178.3,366.7 188.2,365.5 198.1,364.5 207.9,363.7 217.8,363.0 227.6,362.4 237.5,361.8 247.4,361.4 257.2,361.0 267.1,360.7 276.9,360.4 286.8,360.2 296.7,360.0 306.5,359.8 316.4,359.7 326.2,359.6 336.1,359.5 346.0,359.4 355.8,359.3 365.7,359.2 375.6,359.2 385.4,359.1 395.3,359.1 405.1,359.1 415.0,356.4 424.9,344.8 434.7,335.0 444.6,326.7 454.4,319.6 464.3,313.5 474.2,308.4 484.0,304.0 493.9,300.3 503.8,297.2 513.6,294.5 523.5,292.2 533.3,290.3 543.2,288.7 553.1,287.3 562.9,286.1 572.8,285.1 582.6,284.2 592.5,283.5 602.4,282.9 612.2,282.4 622.1,281.9 631.9,281.5 641.8,281.2 651.7,280.9 661.5,280.7 671.4,280.5 681.3,280.3 691.1,280.2 701.0,280.1 710.8,280.0 720.7,279.9 730.6,279.8 740.4,279.7 750.3,279.7 760.1,279.6 770.0,279.6" fill="none" stroke="#5A3FA8" stroke-opacity="0.75" stroke-width="1.4" stroke-dasharray="4 4" stroke-linejoin="round"/>
+  
+  
+  <circle cx="770.0" cy="141.2" r="4.5" fill="#4D6BFE" stroke="#ffffff" stroke-width="2"/>
+  <text x="764.0" y="129.2" text-anchor="end" class="val">⬇ 1084</text>
+  <text x="60" y="448" class="ax">实线 = 真实快照（自 2026-11-15 起每日采集）· 虚线 = 发布锚点均匀回推的估算</text>
+</svg>
