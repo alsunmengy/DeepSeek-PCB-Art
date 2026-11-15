@@ -12,6 +12,12 @@
 
 PCB作者【Alsun梦游的个人空间-哔哩哔哩】 https://b23.tv/ZnkaGRq
 
+## Download History
+
+[![Download history](https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/download-history/chart.svg)](https://github.com/alsunmengy/DeepSeek-PCB-Art/releases)
+
+> 每天 UTC 3:20 自动快照 Release 下载量并提交，从 2026-11-15 起累积真实曲线；此前的区间按 release 发布时间回推，图上虚线标注为估算。
+
 
 > 🐳 DeepSeek 人鱼少女 艺术纪念PCB，嘉立创EDA开源硬件项目，双面艺术丝印，无电气功能，纯收藏向工艺板。
 ## 如果你的闲鱼挂的是我做的这一版，一定要标我的名字“alsun梦游”(B站，闲鱼，小黑盒均同名)
