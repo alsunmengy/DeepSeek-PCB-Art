@@ -14,6 +14,15 @@ PCB作者【Alsun梦游的个人空间-哔哩哔哩】 https://b23.tv/ZnkaGRq
 
 > 上图上半是 star 累积，下半是 Release 下载累积，共用一条时间轴；竖虚线是发版时间。每天 UTC 3:10 自动重新采集并提交。
 
+## 播放量 History
+
+[![播放量 History](https://raw.githubusercontent.com/alsunmengy/DeepSeek-PCB-Art/main/.github/charts/views.svg)](https://www.bilibili.com/video/BV1vbet6dEA8/)
+
+> ▶ 这条是 B 站视频《[开源PCB]人人骂你大肥鱼，我却知你最争气【DeepSeek】》的累计播放量，和上面的图同一套画法、同一个每天 UTC 3:10 的定时任务。
+>
+> 说明：B 站不提供历史播放量接口，所以 **2026-11-22 之前那段是按双指数模型回推的估算**（虚线，按「前几天吃推荐位、之后长尾」的形状拟合到当天实测值），**2026-11-22 起是每天实测**（实线），越往后虚线占比越小。
+
+
 
 > 🐳 DeepSeek 人鱼少女 艺术纪念PCB，嘉立创EDA开源硬件项目，双面艺术丝印，无电气功能，纯收藏向工艺板。
 ## 如果你的闲鱼挂的是我做的这一版，一定要标我的名字“alsun梦游”(B站，闲鱼，小黑盒均同名)

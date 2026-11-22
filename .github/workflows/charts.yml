@@ -17,6 +17,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # B 站风控不可控：这一步失败也不许拖垮 star / download 的图
+      - name: Snapshot Bilibili view count
+        continue-on-error: true
+        env:
+          BVID: BV1vbet6dEA8
+          BILI_SESSDATA: ${{ secrets.BILI_SESSDATA }}
+        run: python3 .github/scripts/bilibili_views.py --snapshot
+
+      - name: Regenerate view chart
+        run: |
+          python3 .github/scripts/gen_views_chart.py "$GITHUB_REPOSITORY" "#4D6BFE" .github/charts/views.svg "" "DeepSeek 人鱼少女"
+
       - name: Snapshot download counts + regenerate combined chart
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -27,6 +39,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/charts/chart.svg .github/download-history/history.json
+          git add .github/charts/chart.svg .github/charts/views.svg \
+                  .github/download-history/history.json .github/view-history/history.json
           git diff --cached --quiet || git commit -m "chore: update star & download history"
           git push
