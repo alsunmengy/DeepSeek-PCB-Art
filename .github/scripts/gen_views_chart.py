@@ -4,8 +4,9 @@
 用法:
   python3 gen_views_chart.py <owner/repo> <accent> <out.svg> [bg.jpg] [charlabel]
 
-画布 800x700、同一张背景 + 白色蒙版、同一套字体/网格/平滑（PCHIP 单调插值）、
-同样的 5 条横向网格 + 5 个横向刻度。
+画布 800x700、同一套背景蒙版做法、同一套字体/网格/平滑（PCHIP 单调插值）、
+同样的 5 条横向网格 + 5 个横向刻度。背景图独立于 star 图，默认用
+.github/view-history/bg.jpg。
 
 数据来源 .github/view-history/history.json：
   * backfill  —— 发布日到首个实测快照之前，双指数回推估算（虚线，55% 透明）
@@ -34,6 +35,7 @@ P_TOP, P_H = 100, 482
 PLOT_W = W - M_L - M_R
 X_LABEL_Y = P_TOP + P_H + 22
 VIEW_HIST = ".github/view-history/history.json"
+DEFAULT_BG = ".github/view-history/bg.jpg"
 
 
 def comma(v):
@@ -177,9 +179,9 @@ def gen(repo, accent, views, now, bg_path=None, charlabel="", gold=GOLD):
       <stop offset="100%" stop-color="{accent}" stop-opacity="0.02"/>
     </linearGradient>
     <linearGradient id="veil" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.88"/>
-      <stop offset="22%" stop-color="#ffffff" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.26"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.90"/>
+      <stop offset="22%" stop-color="#ffffff" stop-opacity="0.52"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.46"/>
     </linearGradient>
     <clipPath id="vEst"><rect x="0" y="0" width="{split or 0:.1f}" height="{H}"/></clipPath>
     <clipPath id="vReal"><rect x="{split or 0:.1f}" y="0" width="{W - (split or 0):.1f}" height="{H}"/></clipPath>
@@ -222,10 +224,10 @@ if __name__ == "__main__":
     repo = args[0] if args else "alsunmengy/DeepSeek-PCB-Art"
     accent = args[1] if len(args) > 1 else "#4D6BFE"
     out = args[2] if len(args) > 2 else ".github/charts/views.svg"
-    bgp = args[3] if len(args) > 3 and args[3] else ".github/star-history/bg.jpg"
+    bgp = args[3] if len(args) > 3 and args[3] else DEFAULT_BG
     charlabel = args[4] if len(args) > 4 else "DeepSeek 人鱼少女"
     if not os.path.exists(bgp):            # 参数位被跳过/传错时，退回默认背景
-        bgp = ".github/star-history/bg.jpg"
+        bgp = DEFAULT_BG
 
     views = load_views()
     if not views:
